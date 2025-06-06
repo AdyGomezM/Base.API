@@ -9,7 +9,7 @@ namespace Base.API.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-    //[Authorize]
+    [Authorize]
     public class TourController : APIControllerBase<Tour, TourDTO>
     {
         private readonly ITourService _tourService;
