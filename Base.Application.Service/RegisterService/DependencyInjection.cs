@@ -59,8 +59,9 @@ namespace Base.Application.Service.RegisterService
 			services.AddScoped<IReservationService, ReservacionService>();
 			services.AddScoped<IPersonaService, PersonaService>();
 			services.AddScoped<ICiudadService, CiudadService>();
+            services.AddScoped<ITourService, TourService>();
 
-		}
+        }
 
 		/// <summary>
 		/// Adds the repository.
@@ -74,7 +75,7 @@ namespace Base.Application.Service.RegisterService
 			services.AddScoped<IReservacionRepository, ReservacionRepository>();
 			services.AddScoped<IPersonaRepository, PersonaRepository>();
 			services.AddScoped<ICiudadRepository, CiudadRepository>();
-
-		}
+            services.AddScoped<ITourRepository, TourRepository>();
+        }
 	}
 }

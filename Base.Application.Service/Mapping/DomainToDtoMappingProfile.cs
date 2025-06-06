@@ -20,6 +20,8 @@ namespace Base.Application.Service.Mapping
 			this.CreateMap<ReservacionDTO, Reservacion>().ReverseMap();
 			this.CreateMap<PersonaDTO, Persona>().ReverseMap();
 			this.CreateMap<CiudadDto, Ciudad>().ReverseMap();
-		}
+            this.CreateMap<TourDTO, Tour>().ReverseMap();
+
+        }
     }
 }
